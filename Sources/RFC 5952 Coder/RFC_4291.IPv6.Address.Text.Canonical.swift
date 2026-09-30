@@ -7,7 +7,7 @@ import RFC_5952
 
 extension RFC_4291.IPv6.Address.Text {
 
-    public struct Canonical: Serializer.`Protocol` {
+    public struct Canonical: Serializer::Serializing {
         public init() {}
     }
 }
@@ -46,7 +46,7 @@ extension RFC_4291.IPv6.Address.Text.Canonical {
     }
 }
 
-extension Serializer.`Protocol` where Self == RFC_4291.IPv6.Address.Text.Canonical {
+extension Serializer::Serializing where Self == RFC_4291.IPv6.Address.Text.Canonical {
 
     public static var canonical: RFC_4291.IPv6.Address.Text.Canonical { .init() }
 }
