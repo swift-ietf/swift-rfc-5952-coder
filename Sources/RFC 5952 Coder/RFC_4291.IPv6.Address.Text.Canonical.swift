@@ -1,7 +1,7 @@
 public import ASCII
 public import RFC_4291
 public import RFC_4291_Coder
-public import Serializer
+import Serializer
 import RFC_4648
 import RFC_5952
 
